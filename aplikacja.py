@@ -1,25 +1,11 @@
 import cv2
 from pyzbar.pyzbar import decode
-import datetime
-import csv
 import requests
 from bs4 import BeautifulSoup
-
-
-# Nazwa pliku ze zdjęciem kodu
-# nazwa_pliku = "mus_owocowy.jpg"
-# nazwa_pliku = "lek.jpg"
-# nazwa_pliku = "pigwoniada.jpg"
-# nazwa_pliku = "woda_jablkowa.jpg"
-
-
 import streamlit as st
-import cv2
-from pyzbar.pyzbar import decode
 import numpy as np
-import requests
-from bs4 import BeautifulSoup
 from datetime import datetime
+
 
 def wyszukaj_nazwe_produktu(kod):
     url = f"https://duckduckgo.com/html/?q={kod}"
