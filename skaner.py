@@ -40,7 +40,7 @@ szerokosc_docelowa = 800
 wysokosc_docelowa = int(frame.shape[0] * (szerokosc_docelowa / frame.shape[1]))
 frame = cv2.resize(frame, (szerokosc_docelowa, wysokosc_docelowa))
 
-# Wykryj kody 
+# Wykryj kody
 znalezione_kody = decode(frame)
 
 # Utwórz / dopisz do pliku log.csv
